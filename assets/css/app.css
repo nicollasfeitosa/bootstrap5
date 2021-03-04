@@ -1,0 +1,40 @@
+/*  
+ *   App CSS - Media Queries
+ *   By Nicollas Feitosa
+ */
+
+.bg-gray {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Celular */
+@media (min-width: 360px) and (max-width: 767.98px) {
+    div.col-sm-12.col-md-6.col-lg-3>p {
+        padding: 0 4em;
+        margin-bottom: 4em;
+    }
+    img[width="200"]{
+        width: 320px;
+    }
+
+    .bg-gray {
+        background-color: rgba(241, 241, 241, 0.432);
+    }
+}
+
+/* Tablet MD */
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+    div.col-sm-12.col-md-6.col-lg-3>p {
+        padding: 0 1em;
+    }
+    img[width="200"]{
+        width: 250px;
+    }
+}
+
+/* Para monitores 900p ou 1080p acima de 1366x768*/
+@media (min-width: 1399.98px) {
+    img[width="200"]{
+        width: 275px;
+    }
+}
